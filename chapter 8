@@ -38,18 +38,14 @@ When the program completes, sort and print the resulting words in alphabetical o
 You can download the sample data at http://www.py4e.com/code3/romeo.txt
 
 
+Code online:
 
-My code:
-
-fname = input("Enter file name: ")
+fname= input('Enter a file name: ')
 fh = open(fname)
-lst = list()
-for line in fh:
-    line = line.rstrip()
-    word = line.split()
-    word = lst + word
-    if word in lst: continue
-    word_list = lst.append(word) 
-    word_list = word_list.sort()
-print(word_list)
-    
+lst = list()                      
+for line in fh:                   
+    word= line.split()    
+    for element in word:          
+        if element not in lst:         
+            lst.append(element)  
+print(sorted(lst))
