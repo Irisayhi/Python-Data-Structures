@@ -1,3 +1,34 @@
+In-class Example: To get the average of inputted data
+
+Method 1
+
+total = 0
+count = 0
+while True:
+    number = input("Enter a number:")
+    if number == 'done': break
+    number = float(number)
+    total = total + number
+    count = count + 1
+    
+average = total/count
+print('average is', average)
+
+
+Method 2
+
+numlist = list()
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done':break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist)/len(numlist)
+print('Average', average)
+
+
+
 8.4
 Open the file romeo.txt and read it line by line. For each line, 
 split the line into a list of words using the split() method.
