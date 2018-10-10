@@ -1,6 +1,6 @@
 In-class Example: To get the average of inputted data
 
-Method 1
+Method 1:
 
 total = 0
 count = 0
@@ -15,7 +15,7 @@ average = total/count
 print('average is', average)
 
 
-Method 2
+Method 2:
 
 numlist = list()
 while True:
